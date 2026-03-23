@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 CSS Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+
+            document.getElementById("time").textContent = "Current Time: " + timeString;
+        }
+
+        // Run once immediately
+        updateTime();
+
+        // Update every second
+        setInterval(updateTime, 1000);
+        </script>
+
+    <h1 id="heading">Welcome to My Webpage</h1>
+    <h2 id="time">Current Time:</h2>
+
+    <header>
+        <h1>My CSS Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our website! This section introduces our company and its values.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>We offer a range of services designed to meet your needs.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        </section>
+
+        <button id="themeToggle">Switch Theme</button>
+
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button id="addTask">Add Task</button>
+        <ul id="taskList"></ul>
+
+        <form id="contactForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <button type="submit">Submit</button>
+    </form>
+ 
+        <div id="modal" class="modal">
+        <div class="modal-content">
+        <p id="modalMessage"></p>
+        <button id="closeModal">Close</button>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+        const key = event.key.toLowerCase();
+
+    if (key === "l") {
+        document.body.style.backgroundColor = "lightblue";
+    } 
+    else if (key === "b") {
+        document.body.style.backgroundColor = "blue";
+    } 
+    else if (key === "p") {
+        document.body.style.backgroundColor = "purple";
+    }
+    else if (key === "v") {
+        document.body.style.backgroundColor = "violet";
+    }
+});
+</script>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 John Cristopher B. Ernas</p>
+    </footer>
+
+</body>
+</html>
