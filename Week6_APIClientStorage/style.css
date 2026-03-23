@@ -1,0 +1,81 @@
+:root {
+  --blue-main: #4dabf7;
+  --blue-soft: #a5d8ff;
+  --blue-light: #e7f5ff;
+  --blue-bg: #d0ebff;
+  --blue-dark: #1c7ed6;
+}
+
+/* Page */
+body {
+  background-color: var(--blue-bg);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: var(--blue-light);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header h1 {
+  color: var(--blue-dark);
+}
+
+header p {
+  color: #495057;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--blue-main) !important;
+  border-bottom: 3px solid var(--blue-dark);
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: var(--blue-soft) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--blue-dark);
+  border: none;
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+  background-color: #1864ab;
+}
+
+/* Cards / Sections */
+.card {
+  background-color: var(--blue-light);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: var(--blue-dark);
+}
+
+/* Containers spacing */
+.container {
+  margin-top: 30px;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
