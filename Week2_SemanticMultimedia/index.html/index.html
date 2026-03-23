@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 HTML Lab</title>
+
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ecfdf5;
+}
+
+header {
+    background-color: #065f46;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #065f46;
+}
+
+.btn {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #059669;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My HTML5 Web Page</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="about" class="card">
+        <h2>About HTML5</h2>
+        <p>
+            HTML5 introduces semantic elements and multimedia integration,
+            making web pages more accessible and structured.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <section id="multimedia" class="card">
+        <h2>Multimedia Features</h2>
+
+        <figure>
+            <img src="boracay.jpg" alt="Boracay Image" width="300px" height="300px">
+            <figcaption>Figure 1: Beautiful view of Boracay.</figcaption>
+        </figure>
+
+        <video controls>
+            <source src="sky.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Created by John Christopher B. Ernas | © 2026</p>
+</footer>
+
+</body>
+</html>
